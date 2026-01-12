@@ -23,6 +23,7 @@ header {
 .btn-close-menu,
 .btn-open-menu {
     display: none;
+    color: var(--color-txt-main);
 }
 
 .header__menu ul {
