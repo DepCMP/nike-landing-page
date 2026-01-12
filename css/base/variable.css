@@ -1,0 +1,10 @@
+:root {
+    --header-height: 80px;
+    --logo-width: 60px;
+    --color-txt-main: #000000;
+    --color-txt-gray: #6c6c6c;
+    --color-main: #5d9c59;
+    --color-white: #ffffff;
+    --color-gray-bg: #f4f4f4;
+    --container-max-width: 1300px;
+}

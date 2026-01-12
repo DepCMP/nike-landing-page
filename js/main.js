@@ -1,3 +1,13 @@
+import { renderHero } from "./render/hero.render.js";
+import { renderProduct } from "./render/product.render.js";
+import { renderCategory } from "./render/category.render.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderHero();
+    renderProduct();
+    renderCategory();
+});
+
 const heroSwiper = new Swiper(
     ".hero__swiper",
     {
@@ -14,7 +24,7 @@ const topProductSwiper = new Swiper(
         slidesPerView: 1,
         spaceBetween: 30,
         breakpoints: {
-            600: {
+            576: {
                 slidesPerView: 2
             },
             768: {
@@ -36,9 +46,8 @@ topProductSwiperBtn.querySelector(".btn-prev").addEventListener("click", () => {
 });
 
 const headerContent = document.querySelector("#header__content")
-   
+
 const showMenuClass = 'show-menu';
-console.log(headerContent);
 
 document.querySelector("#btn-close-menu").addEventListener("click", () => {
     headerContent.classList.remove(showMenuClass);
